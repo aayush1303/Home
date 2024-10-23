@@ -149,3 +149,12 @@ body{
       display: none; 
     }
   }
+
+  @media (max-width: 375px) {
+    .phone {
+      top: 140px;
+      right: 1%;
+      font-size: 20px;
+      width: 250px;
+    }
+  }
