@@ -113,14 +113,16 @@ body{
     position: absolute;
     top: 50%;
     width: 100%;
-    display: none;
   }
   
   #testimonial_area .owl-prev,
   #testimonial_area .owl-next{
     width: 40px;
+    font-size: 35px;
     height: 40px;
-    line-height: 40px;
+    display: flex;
+    justify-content: center;
+    line-height: 35px;
     color: white;
     border-radius: 50%;
     text-align: center;
