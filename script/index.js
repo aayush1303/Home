@@ -50,6 +50,14 @@ function toggleDropdown() {
 }
 
 
+//FAQ
+function toggleFAQ(faqId) {
+  const content = document.getElementById(faqId);
+  const icon = document.getElementById('icon-' + faqId);
+  content.classList.toggle('hidden');
+  icon.classList.toggle('rotate-180');
+}
+
 
 
 // Service Section
