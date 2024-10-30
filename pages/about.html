@@ -21,152 +21,136 @@
     <header class="sticky top-0 z-50">
         <!-- Desktop Navbar -->
         <nav class="hidden lg:flex justify-between items-center h-auto bg-gray-100 relative">
-            <div class="absolute top-0 h-full flex items-center py-2 w-[30%] bg-[#e6ebfe] pl-5 z-50" style="clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
-               box-shadow: 100px 0px 25px rgb(128, 128, 128);">
-                <img src="../assets/images/logo.png" class="w-[200px]" alt="Logo">
+          <div class="absolute top-0 h-full flex items-center py-2 w-[30%] bg-[var(--bgLogo)] pl-5 z-50" style="clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
+                   box-shadow: 100px 0px 25px rgb(128, 128, 128);">
+            <img src="../assets/images/logo.png" class="w-[200px]" alt="Logo">
+          </div>
+          <div class="w-full h-full">
+            <div class="flex justify-between bg-[var(--bgColorDark)] text-white h-1/2 pr-5 py-2 pl-10rem">
+              <div class="w-1/3"></div>
+              <a href="tel:18005683248" class="flex items-center gap-2">
+                <span class="text-lg">&#9742;</span> 18005683248
+              </a>
+              <a href="mailto:dummy@dyummy.com" class="flex items-center gap-2">
+                <span class="text-lg">&#9993;</span> dummy@dyummy.com
+              </a>
+              <a href="#" class="flex items-center gap-2">
+                <span class="text-lg">&#128197;</span> Schedule an Appointment
+              </a>
             </div>
-            <div class="w-full h-full">
-                <div class="flex justify-between bg-custom-background2 text-white h-1/2 pr-5 py-2 pl-10rem">
-                    <div class="w-1/3"></div>
-                    <a href="tel:18005683248" class="flex items-center gap-2">
-                        <span class="text-lg">&#9742;</span> 18005683248
-                    </a>
-                    <a href="mailto:dummy@dyummy.com" class="flex items-center gap-2">
-                        <span class="text-lg">&#9993;</span> dummy@dyummy.com
-                    </a>
-                    <a href="#" class="flex items-center gap-2">
-                        <span class="text-lg">&#128197;</span> Schedule an Appointment
-                    </a>
-                </div>
-                <div class="flex justify-between h-1/2 pr-5 py-2 border">
-                    <div class="w-1/3"></div>
-                    <ul class="flex gap-6 text-[1rem] text-gray-700" id="navMenu">
-                        <li><a href="../index.html"
-                                class=" block py-2 font-medium text-gray-700 hover:text-[var(--c1)] uppercase">Home</a>
-                        </li>
-                        <li><a href="./about.html"
-                                class="isActive block py-2 font-medium text-gray-700 hover:text-[var(--c1)] uppercase">About
-                                Us</a></li>
-
-                        <!-- Services Menu with Dropdown -->
-                        <li class="relative group">
-                            <a href="#"
-                                class="block py-2 font-medium text-gray-700 hover:text-[var(--c1)] uppercase">Services</a>
-                            <!-- Dropdown Menu -->
-                            <ul
-                                class="absolute left-0 top-5 w-[20rem] hidden group-hover:block bg-gray-100 pt-5  mt-2  z-10">
-                                <li><a href="./plumbingServices.html"
-                                        class="block px-4 py-2 text-gray-700 hover:text-[var(--c1)] hover:bg-white">Plumbing
-                                        Services</a>
-                                </li>
-                                <li><a href="./installationServices.html"
-                                        class="block px-4 py-2 text-gray-700 hover:text-[var(--c1)] hover:bg-white">Installation
-                                        Services</a></li>
-                                <li><a href="./specializedService.html"
-                                        class="block px-4 py-2 text-gray-700 hover:text-[var(--c1)] hover:bg-white">Specialized
-                                        Plumbing Services</a></li>
-                                <li><a href="./residentialService.html"
-                                        class="block px-4 py-2 text-gray-700 hover:text-[var(--c1)] hover:bg-white">Residential
-                                        Plumbing Services</a></li>
-                                <li><a href="./commercialservice.html"
-                                        class="block px-4 py-2 text-gray-700 hover:text-[var(--c1)] hover:bg-white">Commercial
-                                        Plumbing Services</a></li>
-                                <li><a href="./maintenanceService.html"
-                                        class="block px-4 py-2 text-gray-700 hover:text-[var(--c1)] hover:bg-white">Maintenance
-                                        Services</a></li>
-                                <li><a href="./additionalService.html"
-                                        class="block px-4 py-2 text-gray-700 hover:text-[var(--c1)] hover:bg-white">Additional
-                                        Services</a></li>
-                                <li><a href="./customerSuppService.html"
-                                        class="block px-4 py-2 text-gray-700 hover:text-[var(--c1)] hover:bg-white">Customer
-                                        Support Services</a></li>
-                            </ul>
-                        </li>
-
-                        <li><a href="#"
-                                class="block py-2 font-medium text-gray-700 hover:text-[var(--c1)] uppercase">Resources</a>
-                        </li>
-                        <li><a href="./blog.html"
-                                class="block py-2 font-medium text-gray-700 hover:text-[var(--c1)] uppercase">Blog</a>
-                        </li>
-                        <li><a href="#"
-                                class="block py-2 font-medium text-gray-700 hover:text-[var(--c1)] uppercase">Gallery</a>
-                        </li>
-                        <li><a href="./contact.html"
-                                class="block py-2 font-medium text-gray-700 hover:text-[var(--c1)] uppercase">Contact
-                                Us</a>
-                        </li>
-                    </ul>
-                </div>
+            <div class="flex justify-between h-1/2 pr-5 py-2 border">
+              <div class="w-1/3"></div>
+              <ul class="flex gap-6 text-[1rem] text-gray-700" id="navMenu">
+                <li><a href="../index.html"
+                    class=" block py-2 font-medium text-gray-700 hover:text-[var(--bgColorLight)] uppercase">Home</a></li>
+                <li><a href="./about.html"
+                    class="isActive block py-2 font-medium text-gray-700 hover:text-[var(--bgColorLight)] uppercase">About
+                    Us</a></li>
+    
+                <!-- Services Menu with Dropdown -->
+                <li class="relative group">
+                  <a href="#" class="block py-2 font-medium text-gray-700 hover:text-[var(--bgColorLight)] uppercase">Services</a>
+                  <!-- Dropdown Menu -->
+                  <ul class="absolute left-0 top-5 w-[20rem] hidden group-hover:block bg-gray-100 pt-5  mt-2  z-10">
+                    <li><a href="../pages/services/plumbingServices.html"
+                        class="block px-4 py-2 text-gray-700 hover:text-[var(--bgColorLight)] hover:bg-white">Plumbing Services</a>
+                    </li>
+                    <li><a href="../pages/services/installationServices.html"
+                        class="block px-4 py-2 text-gray-700 hover:text-[var(--bgColorLight)] hover:bg-white">Installation
+                        Services</a></li>
+                    <li><a href="../pages/services/specializedService.html"
+                        class="block px-4 py-2 text-gray-700 hover:text-[var(--bgColorLight)] hover:bg-white">Specialized
+                        Plumbing Services</a></li>
+                    <li><a href="../pages/services/residentialService.html"
+                        class="block px-4 py-2 text-gray-700 hover:text-[var(--bgColorLight)] hover:bg-white">Residential
+                        Plumbing Services</a></li>
+                    <li><a href="../pages/services/commercialservice.html"
+                        class="block px-4 py-2 text-gray-700 hover:text-[var(--bgColorLight)] hover:bg-white">Commercial
+                        Plumbing Services</a></li>
+                    <li><a href="../pages/services/maintenanceService.html"
+                        class="block px-4 py-2 text-gray-700 hover:text-[var(--bgColorLight)] hover:bg-white">Maintenance Services</a>
+                    </li>
+                    <li><a href="../pages/services/additionalService.html"
+                        class="block px-4 py-2 text-gray-700 hover:text-[var(--bgColorLight)] hover:bg-white">Additional
+                        Services</a></li>
+                    <li><a href="../pages/services/customerSuppService.html"
+                        class="block px-4 py-2 text-gray-700 hover:text-[var(--bgColorLight)] hover:bg-white">Customer
+                        Support Services</a></li>
+                  </ul>
+                </li>
+    
+                <li><a href="#" class="block py-2 font-medium text-gray-700 hover:text-[var(--bgColorLight)] uppercase">Resources</a>
+                </li>
+                <li><a href="./blog.html" class="block py-2 font-medium text-gray-700 hover:text-[var(--bgColorLight)] uppercase">Blog</a></li>
+                <li><a href="#" class="block py-2 font-medium text-gray-700 hover:text-[var(--bgColorLight)] uppercase">Gallery</a>
+                </li>
+                <li><a href="./contact.html" class="block py-2 font-medium text-gray-700 hover:text-[var(--bgColorLight)] uppercase">Contact Us</a>
+                </li>
+              </ul>
             </div>
+          </div>
         </nav>
-
+    
         <!-- Mobile Navbar -->
         <nav class="lg:hidden">
-            <div class="z-50 relative flex justify-between px-5 py-2 bg-[#2A1768] text-white items-center">
-                <span class="text-3xl cursor-pointer" id="menuToggle">&#9776;</span>
-                <img src="../assets/images/logoCicle.png" alt="airtech" class="w-[60px] rounded-full">
-            </div>
-            <div class="z-10 lg:hidden bg-slate-200 w-[50%] h-screen absolute left-0 top-0 pt-4rem transition-all duration-300 ease-in-out transform -translate-x-[400%]"
-                id="mobileMenu">
-                <!-- Mobile Navigation -->
-                <ul class="px-5 pt-[6rem] text-lg">
-                    <li><a href="../index.html"
-                            class="block py-2 font-medium text-gray-700 hover:text-[var(--c1)] uppercase">Home</a>
-                    </li>
-                    <li><a href="./about.html"
-                            class="isActive block py-2 font-medium text-gray-700 hover:text-[var(--c1)] uppercase">About
-                            Us</a></li>
-
-                    <!-- Services Menu for Mobile -->
-                    <li class="relative">
-                        <button
-                            class="flex items-center justify-between w-full text-gray-700 font-medium py-2 uppercase hover:text-[var(--c1)]"
-                            onclick="toggleDropdown()">Services <span>&#9662;</span></button>
-                        <!-- Dropdown Menu (Hidden by default) -->
-                        <ul id="mobileDropdown" class="hidden pl-4 space-y-2">
-                            <li><a href="./plumbingServices.html"
-                                    class="block text-gray-700 hover:text-[var(--c1)] uppercase text-[1.1rem]">Plumbing
-                                    Services</a></li>
-                            <li><a href="./installationServices.html"
-                                    class="block text-gray-700 hover:text-[var(--c1)] uppercase text-[1.1rem]">Installation
-                                    Services</a></li>
-                            <li><a href="./specializedService.html"
-                                    class="block text-gray-700 hover:text-[var(--c1)] uppercase text-[1.1rem]">Specialized
-                                    Plumbing Services</a></li>
-                            <li><a href="./residentialService.html"
-                                    class="block text-gray-700 hover:text-[var(--c1)] uppercase text-[1.1rem]">Residential
-                                    Plumbing Services</a></li>
-                            <li><a href="./commercialservice.html"
-                                    class="block text-gray-700 hover:text-[var(--c1)] uppercase text-[1.1rem]">Commercial
-                                    Plumbing Services</a></li>
-                            <li><a href="./maintenanceService.html"
-                                    class="block text-gray-700 hover:text-[var(--c1)] uppercase text-[1.1rem]">Maintenance
-                                    Services</a></li>
-                            <li><a href="./additionalService.html"
-                                    class="block text-gray-700 hover:text-[var(--c1)] uppercase text-[1.1rem]">Additional
-                                    Services</a></li>
-                            <li><a href="./customerSuppService.html"
-                                    class="block text-gray-700 hover:text-[var(--c1)] uppercase text-[1.1rem]">Customer
-                                    Support Services</a></li>
-                        </ul>
-                    </li>
-
-                    <li><a href="#"
-                            class="block py-2 font-medium text-gray-700 hover:text-[var(--c1)] uppercase">Resources</a>
-                    </li>
-                    <li><a href="./blog.html"
-                            class="block py-2 font-medium text-gray-700 hover:text-[var(--c1)] uppercase">Blog</a></li>
-                    <li><a href="#"
-                            class="block py-2 font-medium text-gray-700 hover:text-[var(--c1)] uppercase">Gallery</a>
-                    </li>
-                    <li><a href="./contact.html"
-                            class="block py-2 font-medium text-gray-700 hover:text-[var(--c1)] uppercase">Contact Us</a>
-                    </li>
+          <div class="z-50 relative flex justify-between px-5 py-2 bg-[var(--bgColorDark)] text-white items-center">
+            <span class="text-3xl cursor-pointer" id="menuToggle">&#9776;</span>
+            <img src="../assets/images/logoCicle.png" alt="airtech" class="w-[60px] rounded-full">
+          </div>
+          <div
+            class="z-10 lg:hidden bg-slate-200 w-[50%] h-screen absolute left-0 top-0 pt-4rem transition-all duration-300 ease-in-out transform -translate-x-[400%]"
+            id="mobileMenu">
+            <!-- Mobile Navigation -->
+            <ul class="px-5 pt-[6rem] text-lg">
+              <li><a href="../index.html"
+                  class=" block py-2 font-medium text-gray-700 hover:text-[var(--bgColorLight)] uppercase">Home</a>
+              </li>
+              <li><a href="./about.html" class="isActive block py-2 font-medium text-gray-700 hover:text-[var(--bgColorLight)] uppercase">About
+                  Us</a></li>
+    
+              <!-- Services Menu for Mobile -->
+              <li class="relative">
+                <button
+                  class="flex items-center justify-between w-full text-gray-700 font-medium py-2 uppercase hover:text-[var(--bgColorLight)]"
+                  onclick="toggleDropdown()">Services <span>&#9662;</span></button>
+                <!-- Dropdown Menu (Hidden by default) -->
+                <ul id="mobileDropdown" class="hidden pl-4 space-y-2">
+                  <li><a href="../pages/services/plumbingServices.html"
+                      class="block text-gray-700 hover:text-[var(--bgColorLight)] uppercase text-[1.1rem]">Plumbing Services</a></li>
+                  <li><a href="../pages/services/installationServices.html"
+                      class="block text-gray-700 hover:text-[var(--bgColorLight)] uppercase text-[1.1rem]">Installation
+                      Services</a></li>
+                  <li><a href="../pages/services/specializedService.html"
+                      class="block text-gray-700 hover:text-[var(--bgColorLight)] uppercase text-[1.1rem]">Specialized
+                      Plumbing Services</a></li>
+                  <li><a href="../pages/services/residentialService.html"
+                      class="block text-gray-700 hover:text-[var(--bgColorLight)] uppercase text-[1.1rem]">Residential
+                      Plumbing Services</a></li>
+                  <li><a href="../pages/services/commercialservice.html"
+                      class="block text-gray-700 hover:text-[var(--bgColorLight)] uppercase text-[1.1rem]">Commercial
+                      Plumbing Services</a></li>
+                  <li><a href="../pages/services/maintenanceService.html"
+                      class="block text-gray-700 hover:text-[var(--bgColorLight)] uppercase text-[1.1rem]">Maintenance
+                      Services</a></li>
+                  <li><a href="../pages/services/additionalService.html"
+                      class="block text-gray-700 hover:text-[var(--bgColorLight)] uppercase text-[1.1rem]">Additional
+                      Services</a></li>
+                  <li><a href="../pages/services/customerSuppService.html"
+                      class="block text-gray-700 hover:text-[var(--bgColorLight)] uppercase text-[1.1rem]">Customer
+                      Support Services</a></li>
                 </ul>
-            </div>
+              </li>
+    
+              <li><a href="#" class="block py-2 font-medium text-gray-700 hover:text-[var(--bgColorLight)] uppercase">Resources</a>
+              </li>
+              <li><a href="./blog.html" class="block py-2 font-medium text-gray-700 hover:text-[var(--bgColorLight)] uppercase">Blog</a></li>
+              <li><a href="#" class="block py-2 font-medium text-gray-700 hover:text-[var(--bgColorLight)] uppercase">Gallery</a></li>
+              <li><a href="./contact.html" class="block py-2 font-medium text-gray-700 hover:text-[var(--bgColorLight)] uppercase">Contact Us</a>
+              </li>
+            </ul>
+          </div>
         </nav>
-    </header>
+      </header>
 
     <!-- Hero section of about page -->
     <section class="relative w-full h-48 md:h-64 lg:h-72">
@@ -188,27 +172,25 @@
         <div class="flex flex-col lg:flex-row items-center">
           <!-- Left Image -->
           <div class="w-full lg:w-1/2 mb-8 lg:mb-0 flex justify-center">
-            <img src="../assets/images/aboutusme.jpg" alt="Plumber Image"
-              class=" xl:h-[25rem] lg:h-[30rem] rounded-lg object-cover  border">
+            <img src="../assets/images/aboutme.jpg" alt="Plumber Image"
+              class=" xl:h-[25rem] lg:h-[30rem] rounded-lg object-cover  border ">
           </div>
     
           <!-- Right Content -->
           <div class="w-full lg:w-1/2 lg:pl-12">
-            <!-- <h3 class="text-[var(--c2)] text-lg font-semibold mb-1">About Us</h3> -->
-            <h2 class="xl:text-3xl xl:mb-4 lg:text-2xl font-bold text-[var(--c2)] mb-3">Over 25+ Years Experience In Plumbing
+            <h2 class="xl:text-3xl xl:mb-4 lg:text-2xl text-[1.5rem] font-bold text-[var(--bgColorDark)] mb-3">Over 25+ Years Experience In Plumbing
               Service</h2>
             <p class="text-gray-600 mb-4 xl:mb-6 xl:text-lg lg:text-[1.120rem]">
               Eveniet,  consectetur, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, reiciendis! adipisicing elit. Possimus, impedit! adipisicing elit. Delectus inventore molestiae commodi vitae deleniti dolore ea expedita consectetur qui pariatur. Quam modi quidem porro ullam minima nostrum pariatur consectetur iste nisi. Similique saepe nobis laudantium maiores libero provident dolore eligendi?
             </p>
             <button
-              class="px-6 py-3 bg-[var(--c2)] text-white  text-[1.2rem] md:text-[1.2rem] hover:bg-[var(--c2H)] transition-all duration-300 ease-in-out">Book
+              class="px-6 py-3 bg-[var(--bgColorDark)] text-white  text-[1.2rem] md:text-[1.2rem] hover:bg-[var(--bgColorDarkHover)] transition-all duration-300 ease-in-out">Book
               Your Service Now</button>
           </div>
         </div>
       </section>
 
-
-    <section class=" py-12 px-16 bg-[#2A1768]">
+    <section class=" py-12 px-16 bg-[var(--bgColorDark)]">
         <div class="text-center mb-8">
             <h2 class="text-3xl font-bold text-white">Why Choose Us</h2>
             <p class="text-white mt-2">Discover what sets us apart from the competition.</p>
@@ -248,67 +230,73 @@
         </div>
     </section>
 
-    <!-- Area section -->
-    <section class="flex flex-col items-center justify-center mt-5">
-        <div class="w-full p-6 flex justify-center">
-            <h1 class="text-center text-4xl font-bold">Areas Served </h1>
+    <!-- Area Served Section -->
+    <div class=" font-sans px-20">
+        <div class="w-full p-6 bg-white flex justify-center">
+            <h2 class="text-center text-4xl font-bold">Areas Served</h2>
         </div>
-        <div class="container w-full px-16 ">
-            <div
-                class="location-card rounded-lg p-6 m-6 flex flex-col lg:flex-row items-center justify-center first-card">
-                <div class="lg:w-1/4 lg:order-1 h-40 rounded-lg overflow-hidden mr-4">
-                    <a href="https://www.google.com/maps/place/Statue+of+Liberty" target="_blank"
-                        rel="noopener noreferrer">
-                        <iframe class="map-frame"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.547397258736!2d-74.04796468416857!3d40.68924977933592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c250a322b2b7a3%3A0x55732416d0a34b34!2sStatue%20of%20Liberty!5e0!3m2!1sen!2sus!4v1729678461422!5m2!1sen!2sus"
-                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="container mx-auto mt-8 flex flex-col items-center"> 
+            <!-- First Card -->
+            <div class="areassection-card rounded-lg p-6 flex flex-col lg:flex-row items-center justify-between first-card">
+                <div class="lg:w-1/4 areassection-map-container">
+                    <a href="https://www.google.com/maps/place/Downtown+Columbus,+Columbus,+Ohio" target="_blank" rel="noopener noreferrer">
+                        <!-- <iframe class="areassection-map-frame rounded-lg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.768263215969!2d-82.99880008494363!3d39.96117567942359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88388f39cd0368c3%3A0x9c0ae12594dce1ec!2sDowntown%20Columbus%2C%20Columbus%2C%20Ohio!5e0!3m2!1sen!2sus!4v1712345678901!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+                        <iframe class="areassection-map-frame rounded-lg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24463.870122834836!2d-83.02297864248986!3d39.96411567698674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88388f2fc58bb6e5%3A0xdbbe8dd1f9c928f2!2sDowntown%2C%20Columbus%2C%20OH%2043215%2C%20USA!5e0!3m2!1sen!2sin!4v1730273690010!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </a>
                 </div>
-                <div class="lg:w-3/4 lg:order-2 text-center lg:text-left">
-                    <h2 class="location-title text-2xl font-semibold mt-4">New York City, New York</h2>
-                    <p class="card-description mt-2">Home to the Statue of Liberty and known for its vibrant culture and
-                        iconic skyline.</p>
+                <div class="lg:w-3/4 text-center lg:text-left">
+                    <h3 class="areassection-title text-2xl font-semibold mt-4">Downtown Columbus, Ohio</h3>
+                    <p class="areassection-description mt-2">Lorem ipsum dolor sit amet.</p>
                 </div>
             </div>
-
-            <div
-                class="location-card rounded-lg p-6 m-6 flex flex-col lg:flex-row items-center justify-center middle-card">
-                <div class="lg:w-3/4 lg:order-1 text-center lg:text-right">
-                    <h2 class="location-title text-2xl font-semibold mt-4">San Francisco, California</h2>
-                    <p class="card-description mt-2 mb-2">Famous for the Golden Gate Bridge, a bustling tech hub with a
-                        rich
-                        cultural history.</p>
+            
+            <!-- second Card for Large Screens -->
+            <div class="areassection-card middle-card rounded-lg p-6 hidden lg:flex flex-row items-center justify-between">
+                <div class="lg:w-3/4 text-center lg:text-right">
+                    <h3 class="areassection-title text-2xl font-semibold mt-4">Clintonville, Columbus, Ohio</h3>
+                    <p class="areassection-description mt-2">Lorem ipsum dolor sit amet.</p>
                 </div>
-                <div class="lg:w-1/4 lg:order-2 h-40 rounded-lg overflow-hidden ml-4">
-                    <a href="https://www.google.com/maps/place/Golden+Gate+Bridge" target="_blank"
-                        rel="noopener noreferrer">
-                        <iframe class="map-frame"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.3319260865935!2d-122.47825528468164!3d37.81992897975156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085818c7b0b3fd9%3A0x38a43e4d9a5ef5b1!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1729678705335!5m2!1sen!2sus"
-                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="lg:w-1/4 areassection-map-container lg:pr-4">
+                    <a href="https://www.google.com/maps/place/Clintonville,+Columbus,+Ohio" target="_blank" rel="noopener noreferrer">
+                        <!-- <iframe class="areassection-map-frame rounded-lg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.768263215969!2d-82.99880008494363!3d39.96117567942359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88388f39cd0368c3%3A0x9c0ae12594dce1ec!2sDowntown%20Columbus%2C%20Columbus%2C%20Ohio!5e0!3m2!1sen!2sus!4v1712345678901!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+                        <iframe class="areassection-map-frame rounded-lg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48868.060127765304!2d-83.05702908796411!3d40.04743765404962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88388c6809e1729f%3A0xf0d455a55b7a1cdd!2sClintonville%2C%20Columbus%2C%20OH%2C%20USA!5e0!3m2!1sen!2sin!4v1730273501719!5m2!1sen!2sin" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </a>
                 </div>
             </div>
-
-            <div
-                class="location-card rounded-lg p-6 m-6 flex flex-col lg:flex-row items-center justify-center third-card">
-                <div class="lg:w-1/4 lg:order-1 h-40 rounded-lg overflow-hidden mr-4">
-                    <a href="https://www.google.com/maps/place/Space+Needle" target="_blank" rel="noopener noreferrer">
-                        <iframe class="map-frame"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.514963540238!2d-122.34935888437202!3d47.62050657918459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490154a45e8a65b%3A0x9491c178f6c22ef3!2sSpace%20Needle!5e0!3m2!1sen!2sus!4v1729678729733!5m2!1sen!2sus"
-                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+            <!-- second Card for Smaller Screens -->
+            <div class="areassection-card middle-card rounded-lg p-6 flex flex-col-reverse items-center justify-between lg:hidden">
+                <div class="lg:w-3/4 text-center lg:text-right">
+                    <h3 class="areassection-title text-2xl font-semibold mt-4">Clintonville, Columbus, Ohio</h3>
+                    <p class="areassection-description mt-2">Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="lg:w-1/4 areassection-map-container lg:pr-4">
+                    <a href="https://www.google.com/maps/place/Clintonville,+Columbus,+Ohio" target="_blank" rel="noopener noreferrer">
+                        <!-- <iframe class="areassection-map-frame rounded-lg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.768263215969!2d-82.99880008494363!3d39.96117567942359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88388f39cd0368c3%3A0x9c0ae12594dce1ec!2sDowntown%20Columbus%2C%20Columbus%2C%20Ohio!5e0!3m2!1sen!2sus!4v1712345678901!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+                        <iframe class="areassection-map-frame rounded-lg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48868.060127765304!2d-83.05702908796411!3d40.04743765404962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88388c6809e1729f%3A0xf0d455a55b7a1cdd!2sClintonville%2C%20Columbus%2C%20OH%2C%20USA!5e0!3m2!1sen!2sin!4v1730273501719!5m2!1sen!2sin" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </a>
                 </div>
-                <div class="lg:w-3/4 lg:order-2 text-center lg:text-left">
-                    <h2 class="location-title text-2xl font-semibold mt-4">Seattle, Washington</h2>
-                    <p class="card-description mt-2">Known for the Space Needle and a thriving music and arts scene.</p>
+            </div>
+    
+            <!-- Third Card Dublin, Columbus, Ohio -->
+            <div class="areassection-card rounded-lg p-6 flex flex-col lg:flex-row items-center justify-between third-card">
+                <div class="lg:w-1/4 areassection-map-container">
+                    <a href="https://www.google.com/maps/place/Dublin,+Columbus,+Ohio" target="_blank" rel="noopener noreferrer">
+                        <!-- <iframe class="areassection-map-frame rounded-lg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.768263215969!2d-83.11408178494363!3d40.09922967942359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8838819e1d64cdd3%3A0x6e84c3d3333ac021!2sDublin%2C%20OH!5e0!3m2!1sen!2sus!4v1712345678901!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+                        <iframe class="areassection-map-frame rounded-lg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d97641.41076474353!2d-83.22832463402369!3d40.11344920324261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8838ecc4d450a11f%3A0xc2176815689028!2sDublin%2C%20OH%2C%20USA!5e0!3m2!1sen!2sin!4v1730273640693!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </a>
+                </div>
+                <div class="lg:w-3/4 text-center lg:text-left">
+                    <h2 class="areassection-title text-2xl font-semibold mt-4">Dublin, Columbus, Ohio</h2>
+                    <p class="areassection-description mt-2">Lorem ipsum dolor sit amet.</p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
     
     <!-- Footer Section -->
     <footer>
-        <div class="bg-custom-background2 text-[#EEEEEE] py-10 xl:px-28">
+        <div class="bg-[var(--bgColorDark)] text-[#EEEEEE] py-10 xl:px-28">
             <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-20  px-4 ">
                 <!-- First Column (Logo and Description) -->
                 <div class="space-y-4">
@@ -347,22 +335,22 @@
                     <!-- First Column -->
                     <ul class="space-y-2">
                         <li>
-                            <a href="./plumbingServices.html" class="hover:underline cursor-pointer">
+                            <a href="../pages/services/plumbingServices.html" class="hover:underline cursor-pointer">
                                 <i class="fa-solid fa-angles-right mr-2"></i>Plumbing Services
                             </a>
                         </li>
                         <li>
-                            <a href="./installationServices.html" class="hover:underline cursor-pointer">
+                            <a href="../pages/services/installationServices.html" class="hover:underline cursor-pointer">
                                 <i class="fa-solid fa-angles-right mr-2"></i>Installation Services
                             </a>
                         </li>
                         <li>
-                            <a href="./specializedService.html" class="hover:underline cursor-pointer">
+                            <a href="../pages/services/specializedService.html" class="hover:underline cursor-pointer">
                                 <i class="fa-solid fa-angles-right mr-2"></i>Specialized Plumbing Services
                             </a>
                         </li>
                         <li>
-                            <a href="./residentialService.html" class="hover:underline cursor-pointer">
+                            <a href="../pages/services/residentialService.html" class="hover:underline cursor-pointer">
                                 <i class="fa-solid fa-angles-right mr-2"></i>Residential Plumbing Services
                             </a>
                         </li>
@@ -371,22 +359,22 @@
                     <!-- Second Column -->
                     <ul class="space-y-2">
                         <li>
-                            <a href="./commercialservice.html" class="hover:underline cursor-pointer">
+                            <a href=".../pages/services/commercialservice.html" class="hover:underline cursor-pointer">
                                 <i class="fa-solid fa-angles-right mr-2"></i>Commercial Plumbing Services
                             </a>
                         </li>
                         <li>
-                            <a href="./maintenanceService.html" class="hover:underline cursor-pointer">
+                            <a href="../pages/services/maintenanceService.html" class="hover:underline cursor-pointer">
                                 <i class="fa-solid fa-angles-right mr-2"></i>Maintenance Services
                             </a>
                         </li>
                         <li>
-                            <a href="./additionalService.html" class="hover:underline cursor-pointer">
+                            <a href="../pages/services/additionalService.html" class="hover:underline cursor-pointer">
                                 <i class="fa-solid fa-angles-right mr-2"></i>Additional Services
                             </a>
                         </li>
                         <li>
-                            <a href="./customerSuppService.html" class="hover:underline cursor-pointer">
+                            <a href="../pages/services/customerSuppService.html" class="hover:underline cursor-pointer">
                                 <i class="fa-solid fa-angles-right mr-2"></i>Customer Support Services
                             </a>
                         </li>
@@ -403,7 +391,7 @@
                             class="w-8 h-8 flex items-center justify-center bg-gray-200 rounded-full flex-shrink-0">
                             <i class="fa-solid fa-location-dot text-[#3B1E54]"></i>
                         </a>
-                        <p class="flex-1">No: 58 A, East Madison Street, Baltimore, MD, USA 4508</p>
+                        <p class="flex-1">Columbus, Ohio, USA</p>
                     </div>
 
                     <!-- Phone with Phone Icon -->
@@ -457,7 +445,7 @@
         </div>
         <div class="bg-black h-[50px] flex justify-center items-center">
             <p class="text-center text-[#fff]">© 2022 All Rights Reserved. Designed by <a
-                    href="https://www.wpocean.com/" class="text-[#fff] hover:underline">WP Ocean</a>
+                    href="#" class="text-[#fff] hover:underline">ABC</a>
             </p>
         </div>
     </footer>

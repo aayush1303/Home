@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinak Idea Lab | Task</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../script/index.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <header class="sticky top-0 z-50">
+        <!-- Desktop Navbar -->
+        <nav class="hidden lg:flex justify-between items-center h-auto bg-gray-100 relative">
+          <div class="absolute top-0 h-full flex items-center py-2 w-[30%] bg-[var(--bgLogo)] pl-5 z-50" style="clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
+                   box-shadow: 100px 0px 25px rgb(128, 128, 128);">
+            <img src="../../assets/images/logo.png" class="w-[200px]" alt="Logo">
+          </div>
+          <div class="w-full h-full">
+            <div class="flex justify-between bg-[var(--bgColorDark)] text-white h-1/2 pr-5 py-2 pl-10rem">
+              <div class="w-1/3"></div>
+              <a href="tel:18005683248" class="flex items-center gap-2">
+                <span class="text-lg">&#9742;</span> 18005683248
+              </a>
+              <a href="mailto:dummy@dyummy.com" class="flex items-center gap-2">
+                <span class="text-lg">&#9993;</span> dummy@dyummy.com
+              </a>
+              <a href="#" class="flex items-center gap-2">
+                <span class="text-lg">&#128197;</span> Schedule an Appointment
+              </a>
+            </div>
+            <div class="flex justify-between h-1/2 pr-5 py-2 border">
+              <div class="w-1/3"></div>
+              <ul class="flex gap-6 text-[1rem] text-gray-700" id="navMenu">
+                <li><a href="../../index.html"
+                    class=" block py-2 font-medium text-gray-700 hover:text-[var(--bgColorLight)] uppercase">Home</a></li>
+                <li><a href="../about.html"
+                    class="block py-2 font-medium text-gray-700 hover:text-[var(--bgColorLight)] uppercase">About
+                    Us</a></li>
+    
+                <!-- Services Menu with Dropdown -->
+                <li class="relative group">
+                  <a href="#"
+                    class="isActive block py-2 font-medium text-gray-700 hover:text-[var(--bgColorLight)] uppercase">Services</a>
+                  <!-- Dropdown Menu -->
+                  <ul class="absolute left-0 top-5 w-[20rem] hidden group-hover:block bg-gray-100 pt-5  mt-2  z-10">
+                    <li><a href="./plumbingServices.html"
+                        class=" block px-4 py-2 text-gray-700 hover:text-[var(--bgColorLight)] hover:bg-white">Plumbing
+                        Services</a>
+                    </li>
+                    <li><a href="./installationServices.html" class="isActive block px-4 py-2 text-gray-700 hover:text-[var(--bgColorLight)] hover:bg-white">Installation
+                        Services</a></li>
+                    <li><a href="./specializedService.html" class=" block px-4 py-2 text-gray-700 hover:text-[var(--bgColorLight)] hover:bg-white">Specialized
+                        Plumbing Services</a></li>
+                    <li><a href="./residentialService.html" class=" block px-4 py-2 text-gray-700 hover:text-[var(--bgColorLight)] hover:bg-white">Residential
+                        Plumbing Services</a></li>
+                    <li><a href="./commercialservice.html" class=" block px-4 py-2 text-gray-700 hover:text-[var(--bgColorLight)] hover:bg-white">Commercial
+                        Plumbing Services</a></li>
+                    <li><a href="./commercialservice.html" class=" block px-4 py-2 text-gray-700 hover:text-[var(--bgColorLight)] hover:bg-white">Maintenance
+                        Plumbing Services</a></li>
+                    <li><a href="./additionalService.html" class=" block px-4 py-2 text-gray-700 hover:text-[var(--bgColorLight)] hover:bg-white">Additional
+                        Services</a></li>
+                    <li><a href="./customerSuppService.html" class="block px-4 py-2 text-gray-700 hover:text-[var(--bgColorLight)] hover:bg-white">Customer
+                        Support Services</a></li>
+                  </ul>
+                </li>
+    
+                <li><a href="#" class="block py-2 font-medium text-gray-700 hover:text-[var(--bgColorLight)] uppercase">Resources</a>
+                </li>
+                <li><a href="../blog.html" class="block py-2 font-medium text-gray-700 hover:text-[var(--bgColorLight)] uppercase">Blog</a></li>
+                <li><a href="#" class="block py-2 font-medium text-gray-700 hover:text-[var(--bgColorLight)] uppercase">Gallery</a>
+                </li>
+                <li><a href="../contact.html" class="block py-2 font-medium text-gray-700 hover:text-[var(--bgColorLight)] uppercase">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    
+        <!-- Mobile Navbar -->
+        <nav class="lg:hidden">
+          <div class="z-50 relative flex justify-between px-5 py-2 bg-[var(--bgColorDark)] text-white items-center">
+            <span class="text-3xl cursor-pointer" id="menuToggle">&#9776;</span>
+            <img src="../../assets/images/logoCicle.png" alt="airtech" class="w-[60px] rounded-full">
+          </div>
+          <div
+            class="z-10 lg:hidden bg-slate-200 w-[50%] h-screen absolute left-0 top-0 pt-4rem transition-all duration-300 ease-in-out transform -translate-x-[400%]"
+            id="mobileMenu">
+            <!-- Mobile Navigation -->
+            <ul class="px-5 pt-[6rem] text-lg">
+              <li><a href="../../index.html" class=" block py-2 font-medium text-gray-700 hover:text-[var(--bgColorLight)] uppercase">Home</a>
+              </li>
+              <li><a href="../about.html" class="block py-2 font-medium text-gray-700 hover:text-[var(--bgColorLight)] uppercase">About
+                  Us</a></li>
+    
+              <!-- Services Menu for Mobile -->
+              <li class="relative">
+                <button
+                  class="isActive flex items-center justify-between w-full text-gray-700 font-medium py-2 uppercase hover:text-[var(--bgColorLight)]"
+                  onclick="toggleDropdown()">Services <span>&#9662;</span></button>
+                <!-- Dropdown Menu (Hidden by default) -->
+                <ul id="mobileDropdown" class="hidden pl-4 space-y-2">
+                  <li><a href="./plumbingServices.html"
+                      class=" block text-gray-700 hover:text-[var(--bgColorLight)] uppercase text-[1.1rem]">Plumbing
+                      Services</a></li>
+                  <li><a href="./installationServices.html" class="isActive block text-gray-700 hover:text-[var(--bgColorLight)] uppercase text-[1.1rem]">Installation
+                      Services</a></li>
+                  <li><a href="./specializedService.html" class=" block text-gray-700 hover:text-[var(--bgColorLight)] uppercase text-[1.1rem]">Specialized
+                      Plumbing Services</a></li>
+                  <li><a href="./residentialService.html" class=" block text-gray-700 hover:text-[var(--bgColorLight)] uppercase text-[1.1rem]">Residential
+                      Plumbing Services</a></li>
+                  <li><a href="./commercialservice.html" class=" block text-gray-700 hover:text-[var(--bgColorLight)] uppercase text-[1.1rem]">Commercial
+                      Plumbing Services</a></li>
+                  <li><a href="./maintenanceService.html" class="block text-gray-700 hover:text-[var(--bgColorLight)] uppercase text-[1.1rem]">Maintenance
+                      Services</a></li>
+                  <li><a href="./additionalService.html" class=" block text-gray-700 hover:text-[var(--bgColorLight)] uppercase text-[1.1rem]">Additional
+                      Services</a></li>
+                  <li><a href="./customerSuppService.html" class="block text-gray-700 hover:text-[var(--bgColorLight)] uppercase text-[1.1rem]">Customer
+                      Support Services</a></li>
+                </ul>
+              </li>
+    
+              <li><a href="#" class="block py-2 font-medium text-gray-700 hover:text-[var(--bgColorLight)] uppercase">Resources</a>
+              </li>
+              <li><a href="../blog.html" class="block py-2 font-medium text-gray-700 hover:text-[var(--bgColorLight)] uppercase">Blog</a></li>
+              <li><a href="#" class="block py-2 font-medium text-gray-700 hover:text-[var(--bgColorLight)] uppercase">Gallery</a></li>
+              <li><a href="../contact.html" class="block py-2 font-medium text-gray-700 hover:text-[var(--bgColorLight)] uppercase">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+    <!-- Hero section of about page -->
+    <section class="relative w-full h-48 md:h-64 lg:h-72">
+        <!-- Background image -->
+        <img src="../../assets/images/aboutimg.jpg" alt="Background Image" class="absolute inset-0 w-full h-full object-cover">
+
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-blue-900 bg-opacity-50"></div>
+
+        <!-- Text content -->
+        <div class="relative flex justify-center items-center h-full">
+            <h1 class="text-white text-xl md:text-3xl lg:text-4xl font-bold">Installation Services</h1>
+        </div>
+    </section>
+
+
+    <!-- Main Container -->
+    <div class="max-w-7xl mx-auto px-16 py-6 lg:flex">
+
+        <!-- Sidebar Section -->
+        <aside class="w-full lg:w-[40%] p-4">
+            <div class="border border-[var(--bgColorDark)] text-white   mb-6">
+                <!-- <h2 class="text-xl font-bold">Emergency</h2> -->
+                <a href="./plumbingServices.html"
+                    class=" py-4 text-[1.1rem] bg-[var(--bgColorDark)] px-5 hover:bg-white block  transition-all duration-300 ease-in-out cursor-pointer hover:text-gray-600 text-white ">Plumbing
+                    Services</a>
+
+                <a href="./installationServices.html"
+                    class="py-4 text-[1.1rem] bg-[var(--bgColorDark)] px-5 hover:bg-white block  transition-all duration-300 ease-in-out cursor-pointer hover:text-gray-600 text-white service-active">Installation
+                    Services</a>
+
+                <a href="./specializedService.html"
+                    class="py-4 text-[1.1rem] bg-[var(--bgColorDark)] px-5 hover:bg-white block  transition-all duration-300 ease-in-out cursor-pointer hover:text-gray-600 text-white">Specialized
+                    Plumbing Services</a>
+
+                <a href="./residentialService.html"
+                    class="py-4 text-[1.1rem] bg-[var(--bgColorDark)] px-5 hover:bg-white block  transition-all duration-300 ease-in-out cursor-pointer hover:text-gray-600 text-white ">Residential
+                    Services</a>
+
+
+                <a href="./commercialservice.html"
+                    class="py-4 text-[1.1rem] bg-[var(--bgColorDark)] px-5 hover:bg-white block  transition-all duration-300 ease-in-out cursor-pointer hover:text-gray-600 text-white ">Commercial
+                    Plumbing Services</a>
+                <a href="./maintenanceService.html"
+                    class="py-4 text-[1.1rem] bg-[var(--bgColorDark)] px-5 hover:bg-white block  transition-all duration-300 ease-in-out cursor-pointer hover:text-gray-600 text-white ">Maintenance
+                    Services</a>
+
+                <a href="./additionalService.html"
+                    class="py-4 text-[1.1rem] bg-[var(--bgColorDark)] px-5 hover:bg-white block  transition-all duration-300 ease-in-out cursor-pointer hover:text-gray-600 text-white">Additional
+                    Services</a>
+
+                <a href="./customerSuppService.html"
+                    class="py-4 text-[1.1rem] bg-[var(--bgColorDark)] px-5 hover:bg-white block  transition-all duration-300 ease-in-out cursor-pointer hover:text-gray-600 text-white ">Customer
+                    Support Services</a>
+
+            </div>
+
+            <div class="bg-white p-4 border rounded-lg shadow-md text-center">
+                <h3 class="text-[var(--bgColorDark)] font-bold text-lg">BOOK ONLINE</h3>
+                <p class="text-gray-700 mt-2">Book all of your plumbing services online today!</p>
+                <button
+                    class="px-6 py-3 bg-[var(--bgColorDark)] text-white mt-8 text-[1.2rem] md:text-[1rem] hover:bg-[var(--bgColorDarkHover)] transition-all duration-300 ease-in-out">Book
+                    Now</button>
+            </div>
+        </aside>
+
+        <!-- Main Content Section -->
+        <main class="w-full :w-[60%] p-4">
+
+            <!-- Image Section -->
+            <div class="mb-6">
+                <img src="../../assets/images/installation.jpg" alt="Plumbing emergency" class="w-full rounded-lg">
+            </div>
+
+            <!-- Content Section -->
+            <section class="bg-white p-6 rounded-lg shadow-md">
+                <h1 class="text-2xl font-bold text-[var(--bgColorDark)] mb-4">Emergency Plumbing in NYC: Get Fast Help from Quix
+                    Plumbing
+                    Service</h1>
+                <p class="text-gray-700 mb-6">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo cupiditate, impedit numquam ratione
+                    eius id quasi, perspiciatis, minima illum saepe hic autem ipsa! Voluptate autem praesentium, modi
+                    eius neque vel consequuntur eligendi exercitationem aliquid. Libero voluptatum accusantium maxime
+                    eum doloremque sint minima, quaerat ipsam dignissimos. Illo, laudantium voluptatem. Voluptas,
+                    reiciendis!
+                </p>
+
+                <h2 class="text-xl font-bold text-[var(--bgColorDark)] mb-4">Prompt Response to Emergency Calls</h2>
+                <p class="text-gray-700 mb-4">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus asperiores natus corporis optio
+                    minus necessitatibus animi temporibus voluptatibus incidunt veritatis blanditiis dolor error dolorem
+                    et assumenda dignissimos magni libero voluptas, aliquam molestiae earum repellat repellendus
+                    pariatur rerum. Ullam eos animi expedita numquam iste, sed, neque incidunt at aut, nobis earum.
+                </p>
+
+                <h2 class="text-xl font-bold text-[var(--bgColorDark)] mb-4">Expertise in Emergency Plumbing</h2>
+                <p class="text-gray-700 mb-4">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima delectus nulla iusto nemo fugit
+                    eveniet hic. Recusandae tenetur fugiat ullam, ut corporis laboriosam molestiae, officiis aliquam
+                    molestias perferendis unde adipisci exercitationem nihil placeat quam dolor ratione accusantium
+                    illum aperiam suscipit nam? Facere officia beatae at quas ea laudantium ipsam maxime!
+                </p>
+
+                <h2 class="text-xl font-bold text-[var(--bgColorDark)] mb-4">Quality Service with a Professional Touch</h2>
+                <p class="text-gray-700 mb-4">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita odit optio facere dolorem
+                    excepturi sit tempore voluptates sed, officia recusandae amet animi, delectus quo cumque! Nobis,
+                    voluptate totam! Quibusdam nesciunt voluptate voluptatum magni praesentium et! Praesentium nihil sed
+                    doloremque aliquam repellendus iure illo vel consequatur assumenda? Velit impedit obcaecati
+                    quibusdam.
+                </p>
+
+                <h2 class="text-xl font-bold text-[var(--bgColorDark)] mb-4">Emergency Service within Business Hours</h2>
+                <p class="text-gray-700 mb-4">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore commodi animi asperiores doloremque
+                    consequatur iure rerum, itaque consequuntur inventore dicta repudiandae impedit officiis facere
+                    dolores aperiam libero pariatur dignissimos non excepturi placeat. Sint aperiam deleniti maiores
+                    perferendis quam minus placeat dolore fuga assumenda aspernatur possimus est, praesentium quos
+                    numquam commodi.
+                </p>
+
+                <h2 class="text-xl font-bold text-[var(--bgColorDark)] mb-4">Why Choose Quix For Your Plumbing Emergency</h2>
+                <p class="text-gray-700 mb-4">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nam excepturi ipsam aperiam quo
+                    laboriosam officiis quod, neque a iure nihil corporis! Omnis suscipit, consectetur reiciendis
+                    accusantium culpa perferendis repellat cumque molestiae at voluptatibus enim nobis perspiciatis a
+                    facilis placeat deleniti tenetur itaque ipsam explicabo libero ullam est quibusdam delectus!
+                </p>
+
+                <!-- Call to Action Button -->
+                <div class="text-center w-full mt-8">
+                    <button
+                        class="w-full px-6 py-3 bg-[var(--bgColorDark)] text-white mt-8 text-[1.2rem] md:text-[1.2rem] hover:bg-[var(--bgColorDarkHover)] transition-all duration-300 ease-in-out">Call
+                        Now</button>
+                </div>
+            </section>
+
+
+        </main>
+
+    </div>
+
+    <!-- why choose us -->
+    <section class="bg-[var(--bgColorDark)] px-16 py-6">
+        <h1 class="md:text-center  text-white text-[2.5rem] md:text-[3.5rem] mb-6">Why Choose Us </h1>
+        <div id="" class="md:flex w-full  items-center gap-8 mb-8">
+            <div class="md:w-1/2 pr-8">
+                <p class="text-gray-300  md:text-[1.2rem] text-[1.1rem] ">Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. Error repellat beatae libero ea blanditiis ducimus reiciendis quo quas laudantium?
+                    Eligendi necessitatibus laboriosam quisquam neque ea perspiciatis doloremque molestiae quas, quasi
+                    repellendus similique rem ab delectus explicabo in, sapiente sint voluptates.</p>
+                <button
+                    class="px-6 py-3 bg-[var(--bgColorLight)] text-white mt-8 text-[1.2rem] md:text-[1.2rem] hover:bg-[var(--bgColorLightHover)] transition-all duration-300 ease-in-out">Book
+                    Your Service Now</button>
+            </div>
+            <div class="hidden md:block md:w-1/2">
+                <img src="../../assets/images/whychooseus.webp" alt="why choose us" class="rounded-lg min-h-[300px] object-cover">
+            </div>
+        </div>
+    </section>
+
+    <h3 class="text-center text-4xl font-medium mt-10">Testimonials</h3>
+    <section class="py-20 testimonial-carousel">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <!-- Slider wrapper -->
+            <div class="lg:flex grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-8 swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <!-- Repeatable slide structure -->
+                    <div class="swiper-slide group bg-white border border-solid border-gray-300 rounded-2xl p-6 transition-all duration-500 w-full hover:border-[var(--bgColorDarkHover)] h-[365px] flex flex-col">
+                        <div class="flex items-center gap-5">
+                            <img class="rounded-full object-cover" src="https://pagedone.io/asset/uploads/1696229994.png" alt="avatar" />
+                            <div class="grid gap-1">
+                                <h5 class="text-gray-900 font-medium transition-all duration-500 group-hover:text-[var(--bgColorDarkHover)]">
+                                    Harsh P.</h5>
+                                <span class="text-sm leading-6 text-gray-500">Product Designer</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center mt-5 mb-2 gap-2 text-amber-500 transition-all duration-500 group-hover:[var(--bgColorDarkHover)]">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-md text-gray-500 leading-6 transition-all duration-500 mb-9 group-hover:text-gray-800">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore, laboriosam.
+                        </p>
+                        <div class="text-xl gap-3 flex items-center justify-center mt-auto">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div
+                        class="swiper-slide group bg-white border border-solid border-gray-300 rounded-2xl p-6 transition-all duration-500 w-full hover:border-[var(--bgColorDarkHover)] slide-active:border-[var(--bgColorDarkHover)] h-[365px] flex flex-col">
+                        <div class="flex items-center gap-5">
+                            <img class="rounded-full object-cover" src="https://pagedone.io/asset/uploads/1696229969.png" alt="avatar" />
+                            <div class="grid gap-1">
+                                <h5
+                                    class="text-gray-900 font-medium transition-all duration-500  group-hover:text-[var(--bgColorDarkHover)] swiper-slide-active:text-[var(--bgColorDarkHover)]">
+                                    Jane Doe</h5>
+                                <span class="text-sm leading-6 text-gray-500">CEO</span>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-center mt-5 mb-2 gap-2 text-amber-500 transition-all duration-500  group-hover:text-[var(--bgColorDarkHover)] swiper-slide-active:text-[var(--bgColorDarkHover)]">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <p
+                            class="text-md text-gray-500 leading-6 transition-all duration-500 mb-9  group-hover:text-gray-800">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus modi cumque qui omnis dicta aperiam.
+                        </p>
+                        <div class="text-xl gap-3 flex items-center justify-center mt-auto">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div
+                        class="swiper-slide group bg-white border border-solid border-gray-300 rounded-2xl p-6 transition-all duration-500 w-full hover:border-[var(--bgColorDarkHover)] slide-active:border-[var(--bgColorDarkHover)] h-[365px] flex flex-col">
+                        <div class="flex items-center gap-5">
+                            <img class="rounded-full object-cover" src="https://pagedone.io/asset/uploads/1696229994.png" alt="avatar" />
+                            <div class="grid gap-1">
+                                <h5
+                                    class="text-gray-900 font-medium transition-all duration-500  group-hover:text-[var(--bgColorDarkHover)] swiper-slide-active:text-[var(--bgColorDarkHover)]">
+                                    Harsh P.</h5>
+                                <span class="text-sm leading-6 text-gray-500">Product Designer</span>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-center mt-5 mb-2 gap-2 text-amber-500 transition-all duration-500  group-hover:text-[var(--bgColorDarkHover)] swiper-slide-active:text-[var(--bgColorDarkHover)]">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <p
+                            class="text-md text-gray-500 leading-6 transition-all duration-500 mb-9  group-hover:text-gray-800">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque et exercitationem reprehenderit, illum animi similique totam voluptas assumenda beatae modi?
+                        </p>
+                        <div class="text-xl gap-3 flex items-center justify-center mt-auto">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div
+                        class="swiper-slide group bg-white border border-solid border-gray-300 rounded-2xl p-6 transition-all duration-500 w-full hover:border-[var(--bgColorDarkHover)] slide-active:border-[var(--bgColorDarkHover)] h-[365px] flex flex-col">
+                        <div class="flex items-center gap-5">
+                            <img class="rounded-full object-cover" src="https://pagedone.io/asset/uploads/1696229969.png" alt="avatar" />
+                            <div class="grid gap-1">
+                                <h5
+                                    class="text-gray-900 font-medium transition-all duration-500  group-hover:text-[var(--bgColorDarkHover)] swiper-slide-active:text-[var(--bgColorDarkHover)]">
+                                    John Doe</h5>
+                                <span class="text-sm leading-6 text-gray-500">Product Manager</span>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-center mt-5 mb-2 gap-2 text-amber-500 transition-all duration-500  group-hover:text-[var(--bgColorDarkHover)] swiper-slide-active:text-[var(--bgColorDarkHover)]">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <p
+                            class="text-md text-gray-500 leading-6 transition-all duration-500 mb-9  group-hover:text-gray-800">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse earum repudiandae reprehenderit architecto, libero asperiores voluptates distinctio placeat iusto voluptate quasi perferendis pariatur praesentium. Fuga quod, iusto labore magnam.
+                        </p>
+                        <div class="text-xl gap-3 flex items-center justify-center mt-auto">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div
+                        class="swiper-slide group bg-white border border-solid border-gray-300 rounded-2xl p-6 transition-all duration-500 w-full hover:border-[var(--bgColorDarkHover)] slide-active:border-[var(--bgColorDarkHover)] h-[365px] flex flex-col">
+                        <div class="flex items-center gap-5">
+                            <img class="rounded-full object-cover" src="https://pagedone.io/asset/uploads/1696229994.png" alt="avatar" />
+                            <div class="grid gap-1">
+                                <h5
+                                    class="text-gray-900 font-medium transition-all duration-500  group-hover:text-[var(--bgColorDarkHover)] swiper-slide-active:text-[var(--bgColorDarkHover)]">
+                                    Harsh P.</h5>
+                                <span class="text-sm leading-6 text-gray-500">Product Designer</span>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-center mt-5 mb-2 gap-2 text-amber-500 transition-all duration-500  group-hover:text-[var(--bgColorDarkHover)] swiper-slide-active:text-[var(--bgColorDarkHover)]">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p
+                            class="text-md text-gray-500 leading-6 transition-all duration-500 mb-9  group-hover:text-gray-800">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus similique qui, dolore error dolores modi laborum, officia voluptas ullam eum possimus cupiditate quaerat nemo provident labore mollitia iste, aliquid repellat.
+                        </p>
+                        <div class="text-xl gap-3 flex items-center justify-center mt-auto">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-14 flex flex-col justify-center items-center max-sm:gap-8">
+                <!-- Slider controls -->
+                <div class="flex items-center gap-8">
+                    <button id="slider-button-left"
+                        class="swiper-button-prev group flex justify-center items-center border border-solid border-[var(--bgColorDarkHover)] w-12 h-12 transition-all duration-500 rounded-full hover:bg-[var(--bgColorDarkHover)]">
+                        <svg class="h-6 w-6 text-[var(--bgColorDarkHover)] group-hover:text-white" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M20.9999 12L4.99992 12M9.99992 6L4.70703 11.2929C4.3737 11.6262 4.20703 11.7929 4.20703 12C4.20703 12.2071 4.3737 12.3738 4.70703 12.7071L9.99992 18"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <button id="slider-button-right"
+                        class="swiper-button-next group flex justify-center items-center border border-solid border-[var(--bgColorDarkHover)] w-12 h-12 transition-all duration-500 rounded-full hover:bg-[var(--bgColorDarkHover)]">
+                        <svg class="h-6 w-6 text-[var(--bgColorDarkHover)] group-hover:text-white" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M3 12L19 12M14 18L19.2929 12.7071C19.6262 12.3738 19.7929 12.2071 19.7929 12C19.7929 11.7929 19.6262 11.6262 19.2929 11.2929L14 6"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- FAQ Section -->
+        <div class="container px-20 mt-8  mb-8">
+            <div class="bg-white rounded-lg">
+                <h2 class="text-3xl font-bold text-center  py-6">Frequently Asked Questions</h2>
+                <div id="faq-container">
+                    <div class="border-b">
+                        <button class="flex justify-between items-center w-full p-4 text-left text-gray-700 faq-button" onclick="toggleFAQ('faq1')">
+                            <span class="font-semibold">What plumbing services do you offer?</span>
+                            <svg class="w-6 h-6 transform transition-transform duration-300" id="icon-faq1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div id="faq1" class="hidden p-4 faq-content">
+                            <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra ex sed lectus aliquam, nec facilisis sem vestibulum. 
+                                Donec quis nibh ac mi accumsan dapibus a vel turpis. Sed sit amet posuere nunc, pretium suscipit ante. 
+                                Duis tristique porta ante, ut fringilla urna dignissim nec.  Proin sit amet vestibulum augue.</p>
+                        </div>
+                    </div>
+                    <div class="border-b">
+                        <button class="flex justify-between items-center w-full p-4 text-left text-gray-700 faq-button" onclick="toggleFAQ('faq2')">
+                            <span class="font-semibold">Are your plumbers licensed?</span>
+                            <svg class="w-6 h-6 transform transition-transform duration-300" id="icon-faq2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div id="faq2" class="hidden p-4 faq-content">
+                            <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra ex sed lectus aliquam, nec facilisis sem vestibulum. 
+                                Donec quis nibh ac mi accumsan dapibus a vel turpis. Sed sit amet posuere nunc, pretium suscipit ante. Duis turpis ligula, dictum vel dignissim nec, scelerisque a nunc. .</p>
+                        </div>
+                    </div>
+                    <div class="border-b ">
+                        <button class="flex justify-between items-center w-full p-4 text-left text-gray-700 faq-button" onclick="toggleFAQ('faq3')">
+                            <span class="font-semibold">Do you provide emergency services?</span>
+                            <svg class="w-6 h-6 transform transition-transform duration-300" id="icon-faq3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div id="faq3" class="hidden p-4 faq-content">
+                            <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra ex sed lectus aliquam, nec facilisis sem vestibulum. Donec quis nibh ac mi accumsan dapibus a vel turpis.
+                                Sed sit amet posuere nunc, pretium suscipit ante. Quisque ultricies, ante at consequat elementum, magna risus consequat orci, sed lobortis nunc lorem at neque. Integer ut pulvinar sapien, et venenatis ligula.
+                                Duis turpis ligula, dictum vel dignissim nec, scelerisque a nunc. Duis tristique porta ante, ut fringil
+                                la urna dignissim nec. Nam tincidunt, sapien nec consequat hendrerit, augue magna varius est, cursus tempor nisi justo a nunc. Proin sit amet vestibulum augue.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-8"></div>
+            </div>
+        </div>
+        
+        <!-- Area Served Section -->
+        <div class=" font-sans px-20">
+            <div class="w-full p-6 bg-white flex justify-center">
+                <h2 class="text-center text-4xl font-bold">Areas Served</h2>
+            </div>
+            <div class="container mx-auto mt-8 flex flex-col items-center"> 
+                <!-- First Card -->
+                <div class="areassection-card rounded-lg p-6 flex flex-col lg:flex-row items-center justify-between first-card">
+                    <div class="lg:w-1/4 areassection-map-container">
+                        <a href="https://www.google.com/maps/place/Downtown+Columbus,+Columbus,+Ohio" target="_blank" rel="noopener noreferrer">
+                            <!-- <iframe class="areassection-map-frame rounded-lg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.768263215969!2d-82.99880008494363!3d39.96117567942359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88388f39cd0368c3%3A0x9c0ae12594dce1ec!2sDowntown%20Columbus%2C%20Columbus%2C%20Ohio!5e0!3m2!1sen!2sus!4v1712345678901!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+                            <iframe class="areassection-map-frame rounded-lg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24463.870122834836!2d-83.02297864248986!3d39.96411567698674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88388f2fc58bb6e5%3A0xdbbe8dd1f9c928f2!2sDowntown%2C%20Columbus%2C%20OH%2043215%2C%20USA!5e0!3m2!1sen!2sin!4v1730273690010!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </a>
+                    </div>
+                    <div class="lg:w-3/4 text-center lg:text-left">
+                        <h3 class="areassection-title text-2xl font-semibold mt-4">Downtown Columbus, Ohio</h3>
+                        <p class="areassection-description mt-2">Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                
+                <!-- second Card for Large Screens -->
+                <div class="areassection-card middle-card rounded-lg p-6 hidden lg:flex flex-row items-center justify-between">
+                    <div class="lg:w-3/4 text-center lg:text-right">
+                        <h3 class="areassection-title text-2xl font-semibold mt-4">Clintonville, Columbus, Ohio</h3>
+                        <p class="areassection-description mt-2">Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="lg:w-1/4 areassection-map-container lg:pr-4">
+                        <a href="https://www.google.com/maps/place/Clintonville,+Columbus,+Ohio" target="_blank" rel="noopener noreferrer">
+                            <!-- <iframe class="areassection-map-frame rounded-lg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.768263215969!2d-82.99880008494363!3d39.96117567942359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88388f39cd0368c3%3A0x9c0ae12594dce1ec!2sDowntown%20Columbus%2C%20Columbus%2C%20Ohio!5e0!3m2!1sen!2sus!4v1712345678901!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+                            <iframe class="areassection-map-frame rounded-lg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48868.060127765304!2d-83.05702908796411!3d40.04743765404962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88388c6809e1729f%3A0xf0d455a55b7a1cdd!2sClintonville%2C%20Columbus%2C%20OH%2C%20USA!5e0!3m2!1sen!2sin!4v1730273501719!5m2!1sen!2sin" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </a>
+                    </div>
+                </div>
+        
+                <!-- second Card for Smaller Screens -->
+                <div class="areassection-card middle-card rounded-lg p-6 flex flex-col-reverse items-center justify-between lg:hidden">
+                    <div class="lg:w-3/4 text-center lg:text-right">
+                        <h3 class="areassection-title text-2xl font-semibold mt-4">Clintonville, Columbus, Ohio</h3>
+                        <p class="areassection-description mt-2">Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="lg:w-1/4 areassection-map-container lg:pr-4">
+                        <a href="https://www.google.com/maps/place/Clintonville,+Columbus,+Ohio" target="_blank" rel="noopener noreferrer">
+                            <!-- <iframe class="areassection-map-frame rounded-lg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.768263215969!2d-82.99880008494363!3d39.96117567942359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88388f39cd0368c3%3A0x9c0ae12594dce1ec!2sDowntown%20Columbus%2C%20Columbus%2C%20Ohio!5e0!3m2!1sen!2sus!4v1712345678901!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+                            <iframe class="areassection-map-frame rounded-lg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48868.060127765304!2d-83.05702908796411!3d40.04743765404962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88388c6809e1729f%3A0xf0d455a55b7a1cdd!2sClintonville%2C%20Columbus%2C%20OH%2C%20USA!5e0!3m2!1sen!2sin!4v1730273501719!5m2!1sen!2sin" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </a>
+                    </div>
+                </div>
+        
+                <!-- Third Card Dublin, Columbus, Ohio -->
+                <div class="areassection-card rounded-lg p-6 flex flex-col lg:flex-row items-center justify-between third-card">
+                    <div class="lg:w-1/4 areassection-map-container">
+                        <a href="https://www.google.com/maps/place/Dublin,+Columbus,+Ohio" target="_blank" rel="noopener noreferrer">
+                            <!-- <iframe class="areassection-map-frame rounded-lg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.768263215969!2d-83.11408178494363!3d40.09922967942359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8838819e1d64cdd3%3A0x6e84c3d3333ac021!2sDublin%2C%20OH!5e0!3m2!1sen!2sus!4v1712345678901!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+                            <iframe class="areassection-map-frame rounded-lg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d97641.41076474353!2d-83.22832463402369!3d40.11344920324261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8838ecc4d450a11f%3A0xc2176815689028!2sDublin%2C%20OH%2C%20USA!5e0!3m2!1sen!2sin!4v1730273640693!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </a>
+                    </div>
+                    <div class="lg:w-3/4 text-center lg:text-left">
+                        <h2 class="areassection-title text-2xl font-semibold mt-4">Dublin, Columbus, Ohio</h2>
+                        <p class="areassection-description mt-2">Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Map -->
+        <div class="w-full max-w-6.5xl mx-auto mt-28">
+
+            <div class="overflow-hidden rounded-lg shadow-lg">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d197214.4195069445!2d-83.13986550453077!3d40.00966954536853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883889c1b990de71%3A0xe43266f8cfb1b533!2sColumbus%2C%20OH%2C%20USA!5e0!3m2!1sen!2sin!4v1730267760527!5m2!1sen!2sin" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>        
+            </div>
+        </div>
+    
+    <!-- Footer Section -->
+    <footer>
+        <div class="bg-[var(--bgColorDark)] text-[#EEEEEE] py-10 xl:px-28">
+            <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-20  px-4 ">
+                <!-- First Column (Logo and Description) -->
+                <div class="space-y-4">
+                    <img src="https://wpocean.com/wp/plumco/wp-content/uploads/2021/11/footer-logo.png" alt="Logo"
+                        class="w-42">
+                    <p>
+                        We provide top-quality plumbing services for residential and commercial clients. Our expert team
+                        specializes in everything from small repairs to complete plumbing system installations.
+                    </p>
+  
+                    <!-- Social Media Links -->
+                    <div class="flex space-x-3">
+                        <a href="#"
+                            class="flex items-center justify-center w-10 h-10 rounded-full bg-black hover:bg-gray-600 transition duration-200">
+                            <i class="fab fa-facebook-f text-white"></i>
+                        </a>
+                        <a href="#"
+                            class="flex items-center justify-center w-10 h-10 rounded-full bg-black hover:bg-gray-600 transition duration-200">
+                            <i class="fab fa-instagram text-white"></i>
+                        </a>
+                        <a href="#"
+                            class="flex items-center justify-center w-10 h-10 rounded-full bg-black hover:bg-gray-600 transition duration-200">
+                            <i class="fab fa-twitter text-white"></i>
+                        </a>
+                        <a href="#"
+                            class="flex items-center justify-center w-10 h-10 rounded-full bg-black hover:bg-gray-600 transition duration-200">
+                            <i class="fa-regular fa-envelope text-white"></i>
+                        </a>
+                    </div>
+                </div>
+  
+                <!-- Second Column (Services) -->
+                <div class="space-y-1">
+                    <h3 class="text-lg font-bold">Services</h3>
+                
+                    <!-- First Column -->
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="./plumbingServices.html" class="hover:underline cursor-pointer">
+                                <i class="fa-solid fa-angles-right mr-2"></i>Plumbing Services
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./installationServices.html" class="hover:underline cursor-pointer">
+                                <i class="fa-solid fa-angles-right mr-2"></i>Installation Services
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./specializedService.html" class="hover:underline cursor-pointer">
+                                <i class="fa-solid fa-angles-right mr-2"></i>Specialized Plumbing Services
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./residentialService.html" class="hover:underline cursor-pointer">
+                                <i class="fa-solid fa-angles-right mr-2"></i>Residential Plumbing Services
+                            </a>
+                        </li>
+                    </ul>
+                
+                    <!-- Second Column -->
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="./commercialservice.html" class="hover:underline cursor-pointer">
+                                <i class="fa-solid fa-angles-right mr-2"></i>Commercial Plumbing Services
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./maintenanceService.html" class="hover:underline cursor-pointer">
+                                <i class="fa-solid fa-angles-right mr-2"></i>Maintenance Services
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./additionalService.html" class="hover:underline cursor-pointer">
+                                <i class="fa-solid fa-angles-right mr-2"></i>Additional Services
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./customerSuppService.html" class="hover:underline cursor-pointer">
+                                <i class="fa-solid fa-angles-right mr-2"></i>Customer Support Services
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+  
+                <!-- New Third Column (Quick Contact) -->
+                <div class="space-y-4">
+                    <h3 class="text-lg font-bold">Quick Contact</h3>
+  
+                    <!-- Address with Location Icon -->
+                    <div class="flex items-start space-x-2">
+                        <a href="https://www.google.com/maps?q=Delhi" target="_blank"
+                            class="w-8 h-8 flex items-center justify-center bg-gray-200 rounded-full flex-shrink-0">
+                            <i class="fa-solid fa-location-dot text-[#3B1E54]"></i>
+                        </a>
+                        <p class="flex-1">Columbus, Ohio, USA</p>
+                    </div>
+  
+                    <!-- Phone with Phone Icon -->
+                    <div class="flex items-center space-x-2">
+                        <div class="w-8 h-8 flex items-center justify-center bg-gray-200 rounded-full">
+                            <i class="fa-solid fa-phone text-[#3B1E54]"></i>
+                        </div>
+                        <p>+000 123 456 789</p>
+                    </div>
+  
+                    <!-- Email with Envelope Icon -->
+                    <div class="flex items-center space-x-2">
+                        <div class="w-8 h-8 flex items-center justify-center bg-gray-200 rounded-full">
+                            <i class="fa-solid fa-envelope text-[#3B1E54]"></i>
+                        </div>
+                        <p>info@example.com</p>
+                    </div>
+                </div>
+  
+  
+                <!-- Fourth Column (Quick Links) -->
+                <div class="space-y-2">
+                    <h3 class="text-lg font-bold">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li>
+                            <i class="fa-solid fa-angles-right mr-2"></i><a href="../../index.html"
+                                class="hover:underline">Home</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-angles-right mr-2"></i><a href="../about.html"
+                                class="hover:underline">About Us</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-angles-right mr-2"></i><a href="../contact.html"
+                                class="hover:underline">Contact Us</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-angles-right mr-2"></i><a href="../blog.html" class="hover:underline">Blog</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-angles-right mr-2"></i><a href="#" class="hover:underline">Site
+                                Map</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-angles-right mr-2"></i><a href="#" class="hover:underline">Glossary
+                                Terms</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bg-black h-[50px] flex justify-center items-center">
+            <p class="text-center text-[#fff]">© 2022 All Rights Reserved. Designed by <a
+                    href="#" class="text-[#fff] hover:underline">ABC</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

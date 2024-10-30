@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco-Friendly Plumbing Solutions for Sustainable Living</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../script/index.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="sticky top-0 z-50">
+        <!-- Desktop Navbar -->
+        <nav class="hidden lg:flex justify-between items-center h-auto bg-gray-100 relative">
+            <div class="absolute top-0 h-full flex items-center py-2 w-[30%] bg-[var(--bgLogo)] pl-5 z-50" style="clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
+               box-shadow: 100px 0px 25px rgb(128, 128, 128);">
+                <img src="../../assets/images/logo.png" class="w-[200px]" alt="Logo">
+            </div>
+            <div class="w-full h-full">
+                <div class="flex justify-between bg-[var(--bgColorDark)] text-white h-1/2 pr-5 py-2 pl-10rem">
+                    <div class="w-1/3"></div>
+                    <a href="tel:18005683248" class="flex items-center gap-2">
+                        <span class="text-lg">&#9742;</span> 18005683248
+                    </a>
+                    <a href="mailto:dummy@dyummy.com" class="flex items-center gap-2">
+                        <span class="text-lg">&#9993;</span> dummy@dyummy.com
+                    </a>
+                    <a href="#" class="flex items-center gap-2">
+                        <span class="text-lg">&#128197;</span> Schedule an Appointment
+                    </a>
+                </div>
+                <div class="flex justify-between h-1/2 pr-5 py-2 border">
+                    <div class="w-1/3"></div>
+                    <ul class="flex gap-6 text-[1rem] text-gray-700" id="navMenu">
+                        <li><a href="../../index.html"
+                                class=" block py-2 font-medium text-gray-700 hover:text-[var(--bgColorLight)] uppercase">Home</a>
+                        </li>
+                        <li><a href="../about.html"
+                                class="block py-2 font-medium text-gray-700 hover:text-[var(--bgColorLight)] uppercase">About
+                                Us</a></li>
+    
+                        <!-- Services Menu with Dropdown -->
+                        <li class="relative group">
+                            <a href="#"
+                                class=" block py-2 font-medium text-gray-700 hover:text-[var(--bgColorLight)] uppercase">Services</a>
+                            <!-- Dropdown Menu -->
+                            <ul
+                                class="absolute left-0 top-5 w-[20rem] hidden group-hover:block bg-gray-100 pt-5  mt-2  z-10">
+                                <li><a href="../services/plumbingServices.html"
+                                        class=" block px-4 py-2 text-gray-700 hover:text-[var(--bgColorLight)] hover:bg-white">Plumbing
+                                        Services</a>
+                                </li>
+                                <li><a href="../services/installationServices.html"
+                                        class=" block px-4 py-2 text-gray-700 hover:text-[var(--bgColorLight)] hover:bg-white">Installation
+                                        Services</a></li>
+                                <li><a href="../services/specializedService.html"
+                                        class=" block px-4 py-2 text-gray-700 hover:text-[var(--bgColorLight)] hover:bg-white">Specialized
+                                        Plumbing Services</a></li>
+                                <li><a href="../services/residentialService.html"
+                                        class="block px-4 py-2 text-gray-700 hover:text-[var(--bgColorLight)] hover:bg-white">Residential
+                                        Plumbing Services</a></li>
+                                <li><a href="../services/commercialservice.html"
+                                        class="block px-4 py-2 text-gray-700 hover:text-[var(--bgColorLight)] hover:bg-white">Commercial
+                                        Plumbing Services</a></li>
+                                <li><a href="../services/maintenanceService.html"
+                                        class=" block px-4 py-2 text-gray-700 hover:text-[var(--bgColorLight)] hover:bg-white">Maintenance
+                                        Plumbing Services</a></li>
+                                <li><a href="../services/additionalService.html"
+                                        class="block px-4 py-2 text-gray-700 hover:text-[var(--bgColorLight)] hover:bg-white">Additional
+                                        Services</a></li>
+                                <li><a href="../services/customerSuppService.html"
+                                        class="block px-4 py-2 text-gray-700 hover:text-[var(--bgColorLight)] hover:bg-white">Customer
+                                        Support Services</a></li>
+                            </ul>
+                        </li>
+    
+                        <li><a href="#"
+                                class="block py-2 font-medium text-gray-700 hover:text-[var(--bgColorLight)] uppercase">Resources</a>
+                        </li>
+                        <li><a href="../blog.html"
+                                class="isActive block py-2 font-medium text-gray-700 hover:text-[var(--bgColorLight)] uppercase">Blog</a>
+                        </li>
+                        <li><a href="#"
+                                class="block py-2 font-medium text-gray-700 hover:text-[var(--bgColorLight)] uppercase">Gallery</a>
+                        </li>
+                        <li><a href="../contact.html"
+                                class="block py-2 font-medium text-gray-700 hover:text-[var(--bgColorLight)] uppercase">Contact
+                                Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    
+        <!-- Mobile Navbar -->
+        <nav class="lg:hidden">
+            <div class="z-50 relative flex justify-between px-5 py-2 bg-[var(--bgColorDark)] text-white items-center">
+                <span class="text-3xl cursor-pointer" id="menuToggle">&#9776;</span>
+                <img src="../../assets/images/logoCicle.png" alt="airtech" class="w-[60px] rounded-full">
+            </div>
+            <div class="z-10 lg:hidden bg-slate-200 w-[50%] h-screen absolute left-0 top-0 pt-4rem transition-all duration-300 ease-in-out transform -translate-x-[400%]"
+                id="mobileMenu">
+                <!-- Mobile Navigation -->
+                <ul class="px-5 pt-[6rem] text-lg">
+                    <li><a href="../../index.html"
+                            class=" block py-2 font-medium text-gray-700 hover:text-[var(--bgColorLight)] uppercase">Home</a>
+                    </li>
+                    <li><a href="../about.html"
+                            class="block py-2 font-medium text-gray-700 hover:text-[var(--bgColorLight)] uppercase">About
+                            Us</a></li>
+    
+                    <!-- Services Menu for Mobile -->
+                    <li class="relative">
+                        <button
+                            class=" flex items-center justify-between w-full text-gray-700 font-medium py-2 uppercase hover:text-[var(--bgColorLight)]"
+                            onclick="toggleDropdown()">Services <span>&#9662;</span></button>
+                        <!-- Dropdown Menu (Hidden by default) -->
+                        <ul id="mobileDropdown" class="hidden pl-4 space-y-2">
+                            <li><a href="../services/plumbingServices.html"
+                                    class=" block text-gray-700 hover:text-[var(--bgColorLight)] uppercase text-[1.1rem]">Plumbing
+                                    Services</a></li>
+                            <li><a href="../services/installationServices.html"
+                                    class=" block text-gray-700 hover:text-[var(--bgColorLight)] uppercase text-[1.1rem]">Installation
+                                    Services</a></li>
+                            <li><a href="../services/specializedService.html"
+                                    class=" block text-gray-700 hover:text-[var(--bgColorLight)] uppercase text-[1.1rem]">Specialized
+                                    Plumbing Services</a></li>
+                            <li><a href="../services/residentialService.html"
+                                    class="block text-gray-700 hover:text-[var(--bgColorLight)] uppercase text-[1.1rem]">Residential
+                                    Plumbing Services</a></li>
+                            <li><a href="../services/commercialservice.html"
+                                    class="block text-gray-700 hover:text-[var(--bgColorLight)] uppercase text-[1.1rem]">Commercial
+                                    Plumbing Services</a></li>
+                            <li><a href="../services/maintenanceService.html"
+                                    class="block text-gray-700 hover:text-[var(--bgColorLight)] uppercase text-[1.1rem]">Maintenance
+                                    Services</a></li>
+                            <li><a href="../services/additionalService.html"
+                                    class="block text-gray-700 hover:text-[var(--bgColorLight)] uppercase text-[1.1rem]">Additional
+                                    Services</a></li>
+                            <li><a href="../services/customerSuppService.html"
+                                    class="block text-gray-700 hover:text-[var(--bgColorLight)] uppercase text-[1.1rem]">Customer
+                                    Support Services</a></li>
+                        </ul>
+                    </li>
+    
+                    <li><a href="#"
+                            class="block py-2 font-medium text-gray-700 hover:text-[var(--bgColorLight)] uppercase">Resources</a>
+                    </li>
+                    <li><a href="../blog.html"
+                            class="isActive block py-2 font-medium text-gray-700 hover:text-[var(--bgColorLight)] uppercase">Blog</a></li>
+                    <li><a href="#"
+                            class="block py-2 font-medium text-gray-700 hover:text-[var(--bgColorLight)] uppercase">Gallery</a>
+                    </li>
+                    <li><a href="../contact.html"
+                            class="block py-2 font-medium text-gray-700 hover:text-[var(--bgColorLight)] uppercase">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="max-w-3xl mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold text-indigo-900 mb-4">Eco-Friendly Plumbing Solutions for Sustainable Living</h1>
+        <p class="text-sm text-gray-500 mb-2">Published on Oct 2</p>
+        <img src="../../assets/images/img1.jpeg" alt="Eco-Friendly Plumbing" class="w-full h-64 object-cover rounded-md mb-4">
+        <p class="text-gray-700 mb-6">
+            With growing concerns about environmental sustainability, more NYC residents are exploring eco-friendly plumbing solutions that reduce water usage and minimize their environmental impact. Sustainable plumbing practices benefit the environment while saving homeowners on utility bills.
+        </p>
+        <p class="text-gray-600 mb-4">
+            From installing low-flow fixtures to using recycled water systems, this article covers various options for making your plumbing eco-friendly. These solutions are ideal for anyone looking to contribute to a greener future and reduce water consumption.
+        </p>
+        <p class="text-gray-600 mb-4">
+            Discover practical tips for implementing green plumbing, including energy-efficient water heaters, water-saving faucets, and leak detection systems. Investing in eco-friendly plumbing is a step toward a sustainable future and helps promote a healthier planet.
+        </p>
+    </div>
+    <!-- Footer Section -->
+    <footer>
+        <div class="bg-[var(--bgColorDark)] text-[#EEEEEE] py-10 xl:px-28">
+            <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-20  px-4 ">
+                <!-- First Column (Logo and Description) -->
+                <div class="space-y-4">
+                    <img src="https://wpocean.com/wp/plumco/wp-content/uploads/2021/11/footer-logo.png" alt="Logo"
+                        class="w-42">
+                    <p>
+                        We provide top-quality plumbing services for residential and commercial clients. Our expert team
+                        specializes in everything from small repairs to complete plumbing system installations.
+                    </p>
+  
+                    <!-- Social Media Links -->
+                    <div class="flex space-x-3">
+                        <a href="#"
+                            class="flex items-center justify-center w-10 h-10 rounded-full bg-black hover:bg-gray-600 transition duration-200">
+                            <i class="fab fa-facebook-f text-white"></i>
+                        </a>
+                        <a href="#"
+                            class="flex items-center justify-center w-10 h-10 rounded-full bg-black hover:bg-gray-600 transition duration-200">
+                            <i class="fab fa-instagram text-white"></i>
+                        </a>
+                        <a href="#"
+                            class="flex items-center justify-center w-10 h-10 rounded-full bg-black hover:bg-gray-600 transition duration-200">
+                            <i class="fab fa-twitter text-white"></i>
+                        </a>
+                        <a href="#"
+                            class="flex items-center justify-center w-10 h-10 rounded-full bg-black hover:bg-gray-600 transition duration-200">
+                            <i class="fa-regular fa-envelope text-white"></i>
+                        </a>
+                    </div>
+                </div>
+  
+                <!-- Second Column (Services) -->
+                <div class="space-y-1">
+                    <h3 class="text-lg font-bold">Services</h3>
+                
+                    <!-- First Column -->
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="../services/plumbingServices.html" class="hover:underline cursor-pointer">
+                                <i class="fa-solid fa-angles-right mr-2"></i>Plumbing Services
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../services/installationServices.html" class="hover:underline cursor-pointer">
+                                <i class="fa-solid fa-angles-right mr-2"></i>Installation Services
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../services/specializedService.html" class="hover:underline cursor-pointer">
+                                <i class="fa-solid fa-angles-right mr-2"></i>Specialized Plumbing Services
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../services/residentialService.html" class="hover:underline cursor-pointer">
+                                <i class="fa-solid fa-angles-right mr-2"></i>Residential Plumbing Services
+                            </a>
+                        </li>
+                    </ul>
+                
+                    <!-- Second Column -->
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="../services/commercialservice.html" class="hover:underline cursor-pointer">
+                                <i class="fa-solid fa-angles-right mr-2"></i>Commercial Plumbing Services
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../services/maintenanceService.html" class="hover:underline cursor-pointer">
+                                <i class="fa-solid fa-angles-right mr-2"></i>Maintenance Services
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../services/additionalService.html" class="hover:underline cursor-pointer">
+                                <i class="fa-solid fa-angles-right mr-2"></i>Additional Services
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../services/customerSuppService.html" class="hover:underline cursor-pointer">
+                                <i class="fa-solid fa-angles-right mr-2"></i>Customer Support Services
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+  
+                <!-- New Third Column (Quick Contact) -->
+                <div class="space-y-4">
+                    <h3 class="text-lg font-bold">Quick Contact</h3>
+  
+                    <!-- Address with Location Icon -->
+                    <div class="flex items-start space-x-2">
+                        <a href="https://www.google.com/maps?q=Delhi" target="_blank"
+                            class="w-8 h-8 flex items-center justify-center bg-gray-200 rounded-full flex-shrink-0">
+                            <i class="fa-solid fa-location-dot text-[#3B1E54]"></i>
+                        </a>
+                        <p class="flex-1">Columbus, Ohio, USA</p>
+                    </div>
+  
+                    <!-- Phone with Phone Icon -->
+                    <div class="flex items-center space-x-2">
+                        <div class="w-8 h-8 flex items-center justify-center bg-gray-200 rounded-full">
+                            <i class="fa-solid fa-phone text-[#3B1E54]"></i>
+                        </div>
+                        <p>+000 123 456 789</p>
+                    </div>
+  
+                    <!-- Email with Envelope Icon -->
+                    <div class="flex items-center space-x-2">
+                        <div class="w-8 h-8 flex items-center justify-center bg-gray-200 rounded-full">
+                            <i class="fa-solid fa-envelope text-[#3B1E54]"></i>
+                        </div>
+                        <p>info@example.com</p>
+                    </div>
+                </div>
+  
+  
+                <!-- Fourth Column (Quick Links) -->
+                <div class="space-y-2">
+                    <h3 class="text-lg font-bold">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li>
+                            <i class="fa-solid fa-angles-right mr-2"></i><a href="../../index.html"
+                                class="hover:underline">Home</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-angles-right mr-2"></i><a href="../about.html"
+                                class="hover:underline">About Us</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-angles-right mr-2"></i><a href="../contact.html"
+                                class="hover:underline">Contact Us</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-angles-right mr-2"></i><a href="../blog.html" class="hover:underline">Blog</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-angles-right mr-2"></i><a href="#" class="hover:underline">Site
+                                Map</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-angles-right mr-2"></i><a href="#" class="hover:underline">Glossary
+                                Terms</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bg-black h-[50px] flex justify-center items-center">
+            <p class="text-center text-[#fff]">© 2022 All Rights Reserved. Designed by <a
+                    href="#" class="text-[#fff] hover:underline">ABC</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
